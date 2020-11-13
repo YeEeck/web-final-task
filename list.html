@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="YeEeck" />
+		<meta name="generator" content="Hbuilder X" />
+		<link href="./css/list.css" type="text/css" rel="stylesheet" />
+		<title>考试列表</title>
+		<script type="text/javascript"></script>
+	</head>
+	<body>
+		<div id="head_line">
+
+		</div>
+
+		<table class="table1" border="0px">
+			<tr height="40px">
+
+				<td width="25%">
+					<a href="./list.html" class="Cap">在线考试系统</a>
+				</td>
+				<td>
+
+				</td>
+				<td align="right">
+					<a class="my_exam" href="./list.html">我的考试</a>
+
+				</td>
+				<td align="right" width="55px">
+					<a href="javascript:alert('个人信息尚未上线')">
+						<div class="userpicDiv">
+							<img src="img/person.png" class="img_user" />
+						</div>
+					</a>
+				</td>
+				<td>
+					<a href="index.html" id="exit_button">退出登录</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="button" value="+  添加考试" class="add_button" onclick="window.location = './Add.html'" />
+				</td>
+				<td>
+					<br />
+					<h3 align="left">考试列表</h3>
+				</td>
+				<td colspan="2" align="right">
+					<div class="input_div">
+						<input type="text" placeholder="请输入考试名进行搜索" id="search_input" />
+						<img src="./img/search.png" class="search_img" id="search_img" onmousemove="document.getElementById('search_img').src = './img/search_hover.png'"
+						 onmouseleave="document.getElementById('search_img').src = './img/search.png'" />
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td colspan="3">
+					<div class="list_elem_div">
+						<table class="list_elem_table">
+							<tr>
+								<td>
+									<a class="list_title" href="Exam/exam1.html">考试示例1</a>
+								</td>
+
+								<td align="right" class="list_head_small">
+									id：1&nbsp;&nbsp;&nbsp;&nbsp;日期：2020年11月6日
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<hr size="1" color="whitesmoke" style="margin-left: 17px;" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="Exam/exam1.html"><img src="./img/time.png" /></a><a class="list_elem_choice" href="Exam/exam1.html">开始考试</a>
+									<a href="javascript:alert('分数查询暂未上线')"></a><img src="./img/search_score.png" /><a class="list_elem_choice" href="javascript:alert('分数查询暂未上线')">分数查询</a>
+									<a href="javascript:alert('成绩分析暂未上线')"></a><img src="./img/analyse.png" /><a class="list_elem_choice" href="javascript:alert('成绩分析暂未上线')">成绩分析</a>
+									<a href="#"><img src="./img/download.png" /></a><a class="list_elem_choice">试卷下载</a>
+								</td>
+							</tr>
+						</table>
+
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td colspan="3">
+					<div class="list_elem_div">
+						<table class="list_elem_table">
+							<tr>
+								<td>
+									<a class="list_title" href="Exam/exam2.html">考试示例2</a>
+								</td>
+
+								<td align="right" class="list_head_small">
+									id：2&nbsp;&nbsp;&nbsp;&nbsp;日期：2020年11月7日
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<hr size="1" color="whitesmoke" style="margin-left: 17px;" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="Exam/exam2.html"><img src="./img/time.png" /></a><a class="list_elem_choice" href="Exam/exam2.html">开始考试</a>
+									<a href="javascript:alert('分数查询暂未上线')"><img src="./img/search_score.png" /></a><a class="list_elem_choice" href="javascript:alert('分数查询暂未上线')">分数查询</a>
+									<a href="javascript:alert('成绩分析暂未上线')"><img src="./img/analyse.png" /></a><a class="list_elem_choice" href="javascript:alert('成绩分析暂未上线')">成绩分析</a>
+									<a href="#"><img src="./img/download.png" /></a><a class="list_elem_choice" href="#">试卷下载</a>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

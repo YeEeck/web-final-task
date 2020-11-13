@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="YeEeck" />
+		<meta name="generator" content="Hbuilder X" />
+		<title>在线考试系统</title>
+		<link href="./css/reg.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="./js/filesaver.js" charset="utf-8"></script>
+		<script type="text/javascript" src="./js/reg.js"></script>
+	</head>
+	<body>
+		<table border="0" cellspacing="0" cellpadding="0" class="table1">
+			<tr>
+				<td>
+					<a href="./index.html"><img src="./img/LOGO.png" class="LOGO" /></a>
+				</td>
+				<td>
+					<div class="TopButton" onclick="window.location = './index.html'">返回首页</div>
+					<div class="TopButton" onclick="window.location = './index.html'">登录</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<div class="main">
+						<br />
+						<h2 class="SecTitle">用户注册</h2>
+						<form action="list.html">
+							<input type="text" class="input1" placeholder="用户名 支持英文与数字,注册后不能修改" id="account" />
+							<input type="password" class="input1" placeholder="密码 8~20位字母丶数字或特殊符号" id="password" />
+							<br />
+							<table class="autologin_table">
+								<tr>
+									<td>
+										<input type="checkbox" value="auto_login" class="autologin" id="check1"/><a class="autologin_t">已确认信息无误</a>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2" align="center">
+										<input type="button" value="创建用户" class="login_button" onclick="reg()" />
+										<p id="tip"></p>
+										<br />
+										<a href="./index.html" class="register">已有账号，立即登录</a>
+
+
+									</td>
+								</tr>
+							</table>
+
+						</form>
+					</div>
+				</td>
+			</tr>
+		</table>
+		<footer class="foot">
+			Designed<br />
+			By YeEeck
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,181 @@
+@font-face {
+	font-family: Baskerville;
+	src: url(../font/Baskerville-Regular-6.ttf)format("truetype");
+}
+
+body {
+	background-image: url(../img/background.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+input:focus {
+	outline: -webkit-focus-ring-color auto 0;
+	/* 去除input的聚焦效果 */
+}
+
+.LOGO {
+	height: 35px;
+}
+
+.TopButton {
+	width: 110px;
+	height: 35px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 20px;
+	border-color: white;
+	float: right;
+	margin-right: 10px;
+
+	color: white;
+	text-align: center;
+	line-height: 35px;
+	font-weight: bold;
+	position: relative;
+	cursor: pointer;
+}
+
+.TopButton:hover {
+	border-width: 2px;
+	width: 108px;
+	height: 33px;
+	/* line-height: 31px; */
+
+}
+
+.table1 {
+	width: 100%;
+	margin-top: 40px;
+}
+
+.main {
+	clear: right;
+	background-color: white;
+	width: 480px;
+	height: 450px;
+	border-radius: 15px;
+	margin: auto;
+
+	margin-top: 170px;
+}
+
+.SecTitle {
+	margin-left: 40px;
+	color: rgb(250, 145, 17);
+}
+
+.input1 {
+	border-radius: 25px;
+	border-color: rgb(230, 230, 230);
+	transition: border-color 0.3s;
+	border-style: solid;
+	border-width: 1px;
+	height: 40px;
+	width: 350px;
+
+	margin-left: 43px;
+	margin-top: 20px;
+
+	font-size: 15px;
+
+
+	padding-left: 30px;
+}
+
+.input1:focus {
+	border-color: rgb(250, 145, 17);
+	transition: border-color 0.3s;
+}
+
+/* 修改输入框Hint(placeholder)色彩 */
+.input1::-webkit-input-placeholder {
+	color: lightgray;
+}
+
+.input1:-moz-placeholder {
+	color: lightgray;
+}
+
+.input1:-ms-input-placeholder {
+	color: lightgray;
+}
+
+/* End */
+
+.autologin_table {
+	margin-top: 30px;
+	margin-left: 43px;
+	width: 80%;
+}
+
+.autologin_t {
+	font-size: 14px;
+	color: grey;
+}
+
+.forget {
+	text-align: right;
+	font-size: 14px;
+	color: gray;
+}
+
+.forget:hover {
+	color: rgb(250, 145, 17);
+}
+
+.login_button {
+	margin-top: 30px;
+	width: 380px;
+	height: 45px;
+	background-color: rgb(250, 145, 17);
+	transition: background-color 0.3s;
+	border-radius: 30px;
+	border-style: none;
+	color: white;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.login_button:hover {
+	background-color: rgb(240, 130, 0);
+	transition: background-color 0.3s;
+}
+
+#tip{
+	text-align: center;
+	color: red;
+	font-size: xx-small;
+}
+
+.register{
+	color: rgb(250, 145, 30);
+	text-decoration: none;
+	font-size: large;
+	margin-top: 100px;
+	
+	
+}
+
+.register:hover{
+	color: rgb(240, 130, 0);
+}
+
+.line{
+	z-index: -1;
+	
+}
+
+.foot{
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	color: gray;
+	
+	font-size: x-large;
+	
+	font-style: italic;
+	font-family: Baskerville;
+}

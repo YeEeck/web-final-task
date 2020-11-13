@@ -1,0 +1,203 @@
+body {
+	background-color: rgb(247, 247, 247);
+}
+
+input:focus {
+	outline: -webkit-focus-ring-color auto 0;
+	/* 去除input的聚焦效果 */
+}
+
+.table1 {
+	width: 75%;
+	margin: auto;
+}
+
+.Cap {
+	color: black;
+	text-decoration: none;
+}
+
+.Cap:hover {
+	color: rgb(0, 149, 255);
+}
+
+.my_exam {
+	text-align: right;
+	color: gray;
+	text-decoration: none;
+}
+
+.my_exam:hover {
+	color: rgb(0, 149, 255);
+}
+
+.userpicDiv {
+	border-style: none;
+	border-radius: 30px;
+	background-color: rgb(138, 137, 135);
+	width: 40px;
+	height: 40px;
+	overflow: hidden;
+
+}
+
+.img_user {
+	width: 80%;
+	position: relative;
+	left: -4px;
+	top: 2px;
+}
+
+#head_line {
+	width: 100%;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 60px;
+	z-index: -1;
+	background-color: white;
+
+	box-shadow: 1px 1px 5px lightgray;
+}
+
+.add_button {
+	background-color: rgb(0, 149, 255);
+	color: white;
+	font-size: 16px;
+	font-weight: bolder;
+	border-style: none;
+	width: 230px;
+	height: 55px;
+
+	margin-top: 30px;
+
+	transition: background-color 0.3s;
+}
+
+.add_button:hover {
+	background-color: rgb(0, 133, 255);
+	transition: background-color 0.3s;
+	cursor: pointer;
+}
+
+.input_div {
+	background-color: white;
+	height: 40px;
+	width: 300px;
+	margin-top: 10px;
+
+	border-style: solid;
+	border-color: lightgray;
+	border-radius: 20px;
+	border-width: 1px;
+	transition: border-color 0.3s;
+	text-align: left;
+
+	overflow: hidden;
+}
+
+.input_div:hover{
+	border-color: rgb(250, 145, 17);
+	transition: border-color 0.3s;
+}
+
+#search_input {
+	border-style: none;
+	position: relative;
+	top: 2px;
+	padding-left: 20px;
+	height: 90%;
+	width: 80%;
+
+	font-size: 14px;
+}
+
+/* 修改输入框Hint(placeholder)色彩 */
+#search_input::-webkit-input-placeholder {
+	color: lightgray;
+}
+
+#search_input:-moz-placeholder {
+	color: lightgray;
+}
+
+#search_input:-ms-input-placeholder {
+	color: lightgray;
+}
+
+/* End */
+
+.search_img {
+	width: 8%;
+	position: relative;
+	top: 7px;
+	cursor: pointer;
+}
+
+.list_elem_div {
+	background-color: white;
+	width: 100%;
+	height: 110px;
+
+	box-shadow: 0px 0px 2px lightgray;
+	transition: box-shadow 0.5s;
+
+	padding-top: 10px;
+
+	margin-top: 20px;
+}
+
+.list_elem_div:hover {
+	box-shadow: 0px 0px 8px lightgray;
+	transition: box-shadow 0.3s;
+}
+
+.list_title {
+	margin-left: 20px;
+	color: #000000;
+	text-decoration: none;
+}
+
+.list_title:hover {
+	color: rgb(0, 133, 255);
+}
+
+.list_head_small {
+	text-align: right;
+	font-size: small;
+}
+
+.list_elem_table {
+	width: 98%;
+}
+
+.list_elem_table img {
+	width: 25px;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+.list_elem_choice {
+	position: relative;
+	bottom: 8px;
+	color: gray;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.list_elem_choice:hover {
+	color: rgb(0, 133, 255);
+}
+
+#exit_button {
+	color: gray;
+	font-size: small;
+	text-decoration: none;
+	position: relative;
+	top: 10px;
+	left: 5px;
+}
+
+#exit_button:hover {
+	color: rgb(0, 133, 255);
+}

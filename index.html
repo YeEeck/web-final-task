@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="YeEeck" />
+		<meta name="generator" content="Hbuilder X" />
+		<title>在线考试系统</title>
+		<link href="./css/index.css" type="text/css" rel="stylesheet" />
+		<script src="./js/index.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<table border="0" cellspacing="0" cellpadding="0" class="table1">
+			<tr>
+				<td>
+					<a href="#"><img src="./img/LOGO.png" class="LOGO" /></a>
+				</td>
+				<td>
+					<div class="TopButton" onclick="window.location = '#'">返回首页</div>
+					<div class="TopButton" onclick="window.location = './register.html'">注册</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<div class="main">
+						<br />
+						<h2 class="SecTitle">在线考试系统登录</h2>
+						<form action="list.html">
+							<input type="text" class="input1" placeholder="用户名/Email/手机" id="account" />
+							<input type="password" class="input1" placeholder="请输入登录密码" id="password" />
+							<br />
+							<table class="autologin_table">
+								<tr>
+									<td>
+										<input type="checkbox" value="auto_login" class="autologin" /><a class="autologin_t">下次自动登录</a>
+									</td>
+									<td align="right">
+										<a href="javascript:alert('默认账号:admin\n默认密码:admin')" class="forget">忘记用户名/密码？</a>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2" align="center">
+										<input type="button" value="登 录" class="login_button" onclick="login()" />
+										<p id="tip"></p>
+										<br />
+										<a href="./register.html" class="register">立即注册</a>
+										
+										
+									</td>
+								</tr>
+							</table>
+							
+						</form>
+					</div>
+				</td>
+			</tr>
+		</table>
+		<footer class="foot">
+			Designed<br />
+			By YeEeck
+		</footer>
+	</body>
+</html>

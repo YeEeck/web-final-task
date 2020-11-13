@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="YeEeck" />
+		<meta name="generator" content="Hbuilder X" />
+		<link href="../css/exam.css" type="text/css" rel="stylesheet" />
+		<script src="../js/exam.js" type="text/javascript"></script>
+		<title>考试示例1</title>
+	</head>
+	<body>
+		<div id="main">
+			<h2>考试示例1</h2>
+			<img src="../img/qr.png" class="qrimg" align="right" />
+			<br />
+			<form action="#" method="get">
+				<table border="0" cellspacing="40px" cellpadding="" class="main_table">
+					<tr>
+						<td>
+							<a style="color: red;">*</a><a class="little_title">您的姓名：</a> <br />
+							<input type="text" class="normal_input" id="name" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a style="color: red;">*</a><a class="little_title">您的学号：</a> <br />
+							<input type="text" class="normal_input" id="number" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a style="color: red;">*</a><a class="little_title">选择题示例：</a> <br /><br />
+							<div class="choice_div" onclick="DivClickSingle('sin1')">
+								<input type="radio" name="single_choice" id="sin1" />选项1
+							</div>
+							<div class="choice_div" onclick="DivClickSingle('sin2')">
+								<input type="radio" name="single_choice" id="sin2" />选项2
+							</div>
+							<div class="choice_div" onclick="DivClickSingle('sin3')">
+								<input type="radio" name="single_choice" id="sin3" />选项3
+							</div>
+							<div class="choice_div" onclick="DivClickSingle('sin4')">
+								<input type="radio" name="single_choice" id="sin4" />选项4
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a style="color: red;">*</a><a class="little_title">判断题示例：</a> <br /><br />
+							<div class="choice_div" onclick="DivClickSingle('bool1')">
+								<input type="radio" name="bool" id="bool1" />对
+							</div>
+							<div class="choice_div" onclick="DivClickSingle('bool2')">
+								<input type="radio" name="bool" id="bool2" />错
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a style="color: red;">*</a><a class="little_title">多选题示例：</a> <br /><br />
+							<div class="choice_div" onclick="DivClick('mult1')">
+								<input type="checkbox" id="mult1" />选项1
+							</div>
+							<div class="choice_div" onclick="DivClick('mult2')">
+								<input type="checkbox" id="mult2" />选项2
+							</div>
+							<div class="choice_div" onclick="DivClick('mult3')">
+								<input type="checkbox" id="mult3" />选项3
+							</div>
+							<div class="choice_div" onclick="DivClick('mult4')">
+								<input type="checkbox" id="mult4" />选项4
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a style="color: red;">*</a><a class="little_title">填空题示例：</a> <br />
+							<input type="text" class="normal_input" id="textinput1" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a style="color: red;">*</a><a class="little_title">简答题示例：</a> <br />
+							<textarea rows="0" cols="0" class="big_input" id="bigtextinput1"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a style="color: red;">*</a><a class="little_title">下拉框选择示例：</a>
+							<select name="select1" id="select1" style="padding-left: 5px;">
+								<option>请选择</option>
+								<option>选项1</option>
+								<option>选项2</option>
+								<option>选项3</option>
+								<option>选项4</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a style="color: red;">*</a><a class="little_title">可更改下拉框选择示例：</a>
+							<input type="text" list="example_list" class="normal_input" style="padding-left: 5px;" />
+							<datalist id="example_list">
+								<option>选项1</option>
+								<option>选项2</option>
+								<option>选项3</option>
+								<option>选项4</option>
+							</datalist>
+						</td>
+					</tr>
+					<tr>
+						<td align="center">
+							<br />
+							<input type="button" value="提交" class="button1" />
+							&nbsp;&nbsp;&nbsp;&nbsp;
+							<input type="reset" value="重置" class="button1" />
+						</td>
+					</tr>
+				</table>
+				<hr class="hr1"/>
+			</form>
+
+		</div>
+	</body>
+</html>
