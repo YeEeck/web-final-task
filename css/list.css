@@ -8,8 +8,44 @@ input:focus {
 	/* 去除input的聚焦效果 */
 }
 
+.topmenu{
+	position: relative;
+	cursor: pointer;
+	padding-left: 5px;
+}
+
+.menu_title:hover{
+	/* color: rgb(0, 149, 255); */
+}
+
+.topmenu2{
+	background-color: white;
+	position: absolute;
+	display: none;
+	
+	
+	border-radius: 5px;
+}
+
+.toplist_elem:hover{
+	/* color: rgb(0, 149, 255); */
+	background-color: lightgray;
+}
+
+.toplist_elem{
+	display: block;
+	
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: whitesmoke;
+	
+	padding: 5px;
+	
+	border-radius: 5px;
+}
+
 .table1 {
-	width: 75%;
+	width: 90%;
 	margin: auto;
 }
 

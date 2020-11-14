@@ -42,3 +42,11 @@ function change_display(str) {
 	}
 
 }
+
+function list_apper(str){
+	document.getElementById(str).style.display = 'block';
+}
+
+function list_disapper(str){
+	document.getElementById(str).style.display = 'none';
+}
