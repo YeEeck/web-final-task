@@ -6,7 +6,7 @@
 		<meta name="generator" content="Hbuilder X" />
 		<link href="./css/list.css" type="text/css" rel="stylesheet" />
 		<title>考试列表</title>
-		<script type="text/javascript"></script>
+		<script type="text/javascript" src="js/list.js"></script>
 	</head>
 	<body>
 		<div id="head_line">
@@ -54,67 +54,275 @@
 				</td>
 			</tr>
 			<tr>
-				<td></td>
-				<td colspan="3">
-					<div class="list_elem_div">
-						<table class="list_elem_table">
-							<tr>
-								<td>
-									<a class="list_title" href="Exam/exam1.html">考试示例1</a>
-								</td>
+				<!-- 添加考试下方的菜单栏 -->
+				<td height="100px">
+					<div class="menu_elem"><a class="menu_elem_text" onclick="change_display('all')">全部考试</a></div>
+					<div class="menu_elem"><a class="menu_elem_text" onclick="change_display('dt')">当堂测验</a></div>
+					<div class="menu_elem"><a class="menu_elem_text" onclick="change_display('kh')">课后测试</a></div>
+					<div class="menu_elem"><a class="menu_elem_text" onclick="change_display('qm')">期末考试</a></div>
+				</td>
+				<td colspan="3" rowspan="2">
+					<!-- 为了不影响上面的侧边菜单，用了表格嵌套 -->
+					<table class="listTable">
+						<tr class="normalExam examListElem">
+							<td>
+								<div class="list_elem_div">
+									<table class="list_elem_table">
+										<tr>
+											<td>
+												<a class="list_title" href="Exam/exam1.html">考试示例1</a>
+											</td>
 
-								<td align="right" class="list_head_small">
-									id：1&nbsp;&nbsp;&nbsp;&nbsp;日期：2020年11月6日
-								</td>
-							</tr>
-							<tr>
-								<td colspan="2">
-									<hr size="1" color="whitesmoke" style="margin-left: 17px;" />
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<a href="Exam/exam1.html"><img src="./img/time.png" /></a><a class="list_elem_choice" href="Exam/exam1.html">开始考试</a>
-									<a href="javascript:alert('分数查询暂未上线')"></a><img src="./img/search_score.png" /><a class="list_elem_choice" href="javascript:alert('分数查询暂未上线')">分数查询</a>
-									<a href="javascript:alert('成绩分析暂未上线')"></a><img src="./img/analyse.png" /><a class="list_elem_choice" href="javascript:alert('成绩分析暂未上线')">成绩分析</a>
-									<a href="#"><img src="./img/download.png" /></a><a class="list_elem_choice">试卷下载</a>
-								</td>
-							</tr>
-						</table>
+											<td align="right" class="list_head_small">
+												id：1&nbsp;&nbsp;&nbsp;&nbsp;日期：2020年11月6日
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<hr size="1" color="whitesmoke" style="margin-left: 17px;" />
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="Exam/exam1.html"><img src="./img/time.png" /></a><a class="list_elem_choice" href="Exam/exam1.html">开始考试</a>
+												<a href="javascript:alert('分数查询暂未上线')"></a><img src="./img/search_score.png" /><a class="list_elem_choice"
+												 href="javascript:alert('分数查询暂未上线')">分数查询</a>
+												<a href="javascript:alert('成绩分析暂未上线')"></a><img src="./img/analyse.png" /><a class="list_elem_choice" href="javascript:alert('成绩分析暂未上线')">成绩分析</a>
+												<a href="#"><img src="./img/download.png" /></a><a class="list_elem_choice">试卷下载</a>
+											</td>
+										</tr>
+									</table>
 
-					</div>
+								</div>
+							</td>
+						</tr>
+						<tr class="normalExam examListElem">
+							<td colspan="3">
+								<div class="list_elem_div">
+									<table class="list_elem_table">
+										<tr>
+											<td>
+												<a class="list_title" href="Exam/exam2.html">考试示例2</a>
+											</td>
+
+											<td align="right" class="list_head_small">
+												id：2&nbsp;&nbsp;&nbsp;&nbsp;日期：2020年11月7日
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<hr size="1" color="whitesmoke" style="margin-left: 17px;" />
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="Exam/exam2.html"><img src="./img/time.png" /></a><a class="list_elem_choice" href="Exam/exam2.html">开始考试</a>
+												<a href="javascript:alert('分数查询暂未上线')"><img src="./img/search_score.png" /></a><a class="list_elem_choice"
+												 href="javascript:alert('分数查询暂未上线')">分数查询</a>
+												<a href="javascript:alert('成绩分析暂未上线')"><img src="./img/analyse.png" /></a><a class="list_elem_choice" href="javascript:alert('成绩分析暂未上线')">成绩分析</a>
+												<a href="#"><img src="./img/download.png" /></a><a class="list_elem_choice" href="#">试卷下载</a>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</td>
+						</tr>
+						<tr class="dtExam examListElem">
+							<td colspan="3">
+								<div class="list_elem_div">
+									<table class="list_elem_table">
+										<tr>
+											<td>
+												<a class="list_title" href="Exam/exam2.html">当堂测试1</a>
+											</td>
+
+											<td align="right" class="list_head_small">
+												id：3&nbsp;&nbsp;&nbsp;&nbsp;日期：2020年11月14日
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<hr size="1" color="whitesmoke" style="margin-left: 17px;" />
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="Exam/exam2.html"><img src="./img/time.png" /></a><a class="list_elem_choice" href="Exam/exam2.html">开始考试</a>
+												<a href="javascript:alert('分数查询暂未上线')"><img src="./img/search_score.png" /></a><a class="list_elem_choice"
+												 href="javascript:alert('分数查询暂未上线')">分数查询</a>
+												<a href="javascript:alert('成绩分析暂未上线')"><img src="./img/analyse.png" /></a><a class="list_elem_choice" href="javascript:alert('成绩分析暂未上线')">成绩分析</a>
+												<a href="#"><img src="./img/download.png" /></a><a class="list_elem_choice" href="#">试卷下载</a>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</td>
+						</tr>
+						<tr class="dtExam examListElem">
+							<td colspan="3">
+								<div class="list_elem_div">
+									<table class="list_elem_table">
+										<tr>
+											<td>
+												<a class="list_title" href="Exam/exam2.html">当堂测试2</a>
+											</td>
+
+											<td align="right" class="list_head_small">
+												id：4&nbsp;&nbsp;&nbsp;&nbsp;日期：2020年11月14日
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<hr size="1" color="whitesmoke" style="margin-left: 17px;" />
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="Exam/exam2.html"><img src="./img/time.png" /></a><a class="list_elem_choice" href="Exam/exam2.html">开始考试</a>
+												<a href="javascript:alert('分数查询暂未上线')"><img src="./img/search_score.png" /></a><a class="list_elem_choice"
+												 href="javascript:alert('分数查询暂未上线')">分数查询</a>
+												<a href="javascript:alert('成绩分析暂未上线')"><img src="./img/analyse.png" /></a><a class="list_elem_choice" href="javascript:alert('成绩分析暂未上线')">成绩分析</a>
+												<a href="#"><img src="./img/download.png" /></a><a class="list_elem_choice" href="#">试卷下载</a>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</td>
+						</tr>
+
+						<tr class="khExam examListElem">
+							<td colspan="3">
+								<div class="list_elem_div">
+									<table class="list_elem_table">
+										<tr>
+											<td>
+												<a class="list_title" href="Exam/exam2.html">课后测试1</a>
+											</td>
+
+											<td align="right" class="list_head_small">
+												id：5&nbsp;&nbsp;&nbsp;&nbsp;日期：2020年11月14日
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<hr size="1" color="whitesmoke" style="margin-left: 17px;" />
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="Exam/exam2.html"><img src="./img/time.png" /></a><a class="list_elem_choice" href="Exam/exam2.html">开始考试</a>
+												<a href="javascript:alert('分数查询暂未上线')"><img src="./img/search_score.png" /></a><a class="list_elem_choice"
+												 href="javascript:alert('分数查询暂未上线')">分数查询</a>
+												<a href="javascript:alert('成绩分析暂未上线')"><img src="./img/analyse.png" /></a><a class="list_elem_choice" href="javascript:alert('成绩分析暂未上线')">成绩分析</a>
+												<a href="#"><img src="./img/download.png" /></a><a class="list_elem_choice" href="#">试卷下载</a>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</td>
+						</tr>
+
+						<tr class="khExam examListElem">
+							<td colspan="3">
+								<div class="list_elem_div">
+									<table class="list_elem_table">
+										<tr>
+											<td>
+												<a class="list_title" href="Exam/exam2.html">课后测试2</a>
+											</td>
+
+											<td align="right" class="list_head_small">
+												id：6&nbsp;&nbsp;&nbsp;&nbsp;日期：2020年11月14日
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<hr size="1" color="whitesmoke" style="margin-left: 17px;" />
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="Exam/exam2.html"><img src="./img/time.png" /></a><a class="list_elem_choice" href="Exam/exam2.html">开始考试</a>
+												<a href="javascript:alert('分数查询暂未上线')"><img src="./img/search_score.png" /></a><a class="list_elem_choice"
+												 href="javascript:alert('分数查询暂未上线')">分数查询</a>
+												<a href="javascript:alert('成绩分析暂未上线')"><img src="./img/analyse.png" /></a><a class="list_elem_choice" href="javascript:alert('成绩分析暂未上线')">成绩分析</a>
+												<a href="#"><img src="./img/download.png" /></a><a class="list_elem_choice" href="#">试卷下载</a>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</td>
+						</tr>
+
+						<tr class="qmExam examListElem">
+							<td colspan="3">
+								<div class="list_elem_div">
+									<table class="list_elem_table">
+										<tr>
+											<td>
+												<a class="list_title" href="Exam/exam2.html">期末测试1</a>
+											</td>
+
+											<td align="right" class="list_head_small">
+												id：7&nbsp;&nbsp;&nbsp;&nbsp;日期：2020年11月14日
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<hr size="1" color="whitesmoke" style="margin-left: 17px;" />
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="Exam/exam2.html"><img src="./img/time.png" /></a><a class="list_elem_choice" href="Exam/exam2.html">开始考试</a>
+												<a href="javascript:alert('分数查询暂未上线')"><img src="./img/search_score.png" /></a><a class="list_elem_choice"
+												 href="javascript:alert('分数查询暂未上线')">分数查询</a>
+												<a href="javascript:alert('成绩分析暂未上线')"><img src="./img/analyse.png" /></a><a class="list_elem_choice" href="javascript:alert('成绩分析暂未上线')">成绩分析</a>
+												<a href="#"><img src="./img/download.png" /></a><a class="list_elem_choice" href="#">试卷下载</a>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</td>
+						</tr>
+
+						<tr class="qmExam examListElem">
+							<td colspan="3">
+								<div class="list_elem_div">
+									<table class="list_elem_table">
+										<tr>
+											<td>
+												<a class="list_title" href="Exam/exam2.html">期末测试2</a>
+											</td>
+
+											<td align="right" class="list_head_small">
+												id：8&nbsp;&nbsp;&nbsp;&nbsp;日期：2020年11月14日
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<hr size="1" color="whitesmoke" style="margin-left: 17px;" />
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="Exam/exam2.html"><img src="./img/time.png" /></a><a class="list_elem_choice" href="Exam/exam2.html">开始考试</a>
+												<a href="javascript:alert('分数查询暂未上线')"><img src="./img/search_score.png" /></a><a class="list_elem_choice"
+												 href="javascript:alert('分数查询暂未上线')">分数查询</a>
+												<a href="javascript:alert('成绩分析暂未上线')"><img src="./img/analyse.png" /></a><a class="list_elem_choice" href="javascript:alert('成绩分析暂未上线')">成绩分析</a>
+												<a href="#"><img src="./img/download.png" /></a><a class="list_elem_choice" href="#">试卷下载</a>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</td>
+						</tr>
+					</table>
+
 				</td>
 			</tr>
 			<tr>
 				<td></td>
-				<td colspan="3">
-					<div class="list_elem_div">
-						<table class="list_elem_table">
-							<tr>
-								<td>
-									<a class="list_title" href="Exam/exam2.html">考试示例2</a>
-								</td>
-
-								<td align="right" class="list_head_small">
-									id：2&nbsp;&nbsp;&nbsp;&nbsp;日期：2020年11月7日
-								</td>
-							</tr>
-							<tr>
-								<td colspan="2">
-									<hr size="1" color="whitesmoke" style="margin-left: 17px;" />
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<a href="Exam/exam2.html"><img src="./img/time.png" /></a><a class="list_elem_choice" href="Exam/exam2.html">开始考试</a>
-									<a href="javascript:alert('分数查询暂未上线')"><img src="./img/search_score.png" /></a><a class="list_elem_choice" href="javascript:alert('分数查询暂未上线')">分数查询</a>
-									<a href="javascript:alert('成绩分析暂未上线')"><img src="./img/analyse.png" /></a><a class="list_elem_choice" href="javascript:alert('成绩分析暂未上线')">成绩分析</a>
-									<a href="#"><img src="./img/download.png" /></a><a class="list_elem_choice" href="#">试卷下载</a>
-								</td>
-							</tr>
-						</table>
-					</div>
-				</td>
 			</tr>
 		</table>
 	</body>
