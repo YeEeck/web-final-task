@@ -6,11 +6,13 @@ window.onload = function() {
 
 	var account = document.location.search.split('?')[1];
 	document.getElementById('username').innerText = account;
-	if (account.length - 8 >= 0) {
-		var length1 = (150 + 10 * (account.length - 8)).toString() + "px";
-		document.getElementById('user_td').style.width = length1;
-		document.getElementsByClassName('usermenu2')[0].style.width = length1;
-	}
+	var length1 = (150 + 10 * (account.length - 8)).toString() + "px";
+	document.getElementById('user_td').style.width = length1;
+	document.getElementsByClassName('usermenu2')[0].style.width = length1;
+
+	//加载完成后默认选中all
+	document.getElementById('normal_choice').style.backgroundColor = 'lightgray';
+	document.getElementById('normal_choice').style.fontWeight = 'bold';
 };
 
 
@@ -22,6 +24,7 @@ function change_display(str) {
 	}
 	for (var i = 0; i < menu_choice.length; i++) {
 		menu_choice[i].style.background = "rgb(247, 247, 247)";
+		menu_choice[i].style.fontWeight = "normal";
 	}
 	if (str == 'dt') {
 		var t = document.getElementsByClassName("dtExam");
@@ -29,12 +32,14 @@ function change_display(str) {
 			t[i].style.display = normal;
 		}
 		document.getElementById('dt_choice').style.backgroundColor = 'lightgray';
+		document.getElementById('dt_choice').style.fontWeight = 'bold';
 	} else if (str == 'all') {
 		var t = document.getElementsByClassName("examListElem");
 		for (var i = 0; i < t.length; i++) {
 			t[i].style.display = normal;
 		}
 		document.getElementById('normal_choice').style.backgroundColor = 'lightgray';
+		document.getElementById('normal_choice').style.fontWeight = 'bold';
 	} else if (str == 'kh') {
 		var t = document.getElementsByClassName("examListElem");
 		for (var i = 0; i < t.length; i++) {
@@ -45,6 +50,7 @@ function change_display(str) {
 			t[i].style.display = normal;
 		}
 		document.getElementById('kh_choice').style.backgroundColor = 'lightgray';
+		document.getElementById('kh_choice').style.fontWeight = 'bold';
 	} else if (str == 'qm') {
 		var t = document.getElementsByClassName("examListElem");
 		for (var i = 0; i < t.length; i++) {
@@ -55,6 +61,7 @@ function change_display(str) {
 			t[i].style.display = normal;
 		}
 		document.getElementById('qm_choice').style.backgroundColor = 'lightgray';
+		document.getElementById('qm_choice').style.fontWeight = 'bold';
 	}
 
 }

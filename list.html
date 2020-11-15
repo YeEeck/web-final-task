@@ -17,49 +17,43 @@
 			<tr height="40px">
 
 				<td width="25%">
-					<a href="./list.html" class="Cap">在线考试系统</a>
+					<img src="img/littleLOGO.png" width="35px" class="logo_img"/>
+					<a href="#" class="Cap">在线考试系统</a>
 				</td>
 				<td>
-					<div class="topmenu" onmousemove="list_apper('son_list1')" onmouseleave="list_disapper('son_list1')">
-						<a class="menu_title">考试消息</a>
-						<div class="topmenu2" id="son_list1">
-							<a class="toplist_elem">系统通知</a>
-							<a class="toplist_elem">私信</a>
-							<a class="toplist_elem">成绩通知</a>
-							<a class="toplist_elem">考试时间表</a>
-						</div>
-					</div>
+					
 				</td>
 				<td align="right">
-					
+
 					<a class="my_exam" href="#">我的考试</a>
 
 				</td>
 				<td align="right" width="140px" id="user_td">
 					<!-- <a href="javascript:alert('个人信息尚未上线')"> -->
-						<div class="usermenu" onmousemove="list_apper('son_list2')" onmouseleave="list_disapper('son_list2')">
-							<a id="username">123456</a>
-							<div class="userpicDiv">
-								<img src="img/person.png" class="img_user" />
-							</div>
-							<div class="topmenu2 usermenu2" id="son_list2">
-								<a class="usermenu_elem">个人中心</a>
-								<a class="usermenu_elem">私信</a>
-								<a class="usermenu_elem">设置</a>
-								<a href="index.html" id="exit_button" class="usermenu_elem">退出登录</a>
-								
-							</div>
+					<div class="usermenu" onmousemove="list_apper('son_list2')" onmouseleave="list_disapper('son_list2')">
+						<a id="username">123456</a>
+						<div class="userpicDiv">
+							<img src="img/person.png" class="img_user" />
 						</div>
-						
+						<div class="topmenu2 usermenu2" id="son_list2">
+							<a class="usermenu_elem">个人中心</a>
+							<a class="usermenu_elem">私信</a>
+							<a class="usermenu_elem">成绩通知</a>
+							<a class="usermenu_elem">设置</a>
+							<a href="index.html" id="exit_button" class="usermenu_elem">退出登录</a>
+
+						</div>
+					</div>
+
 					<!-- </a> -->
 				</td>
 				<td>
-					
+
 				</td>
 			</tr>
 			<tr>
 				<td>
-					<input type="button" value="+  添加考试" class="add_button" onclick="window.location = './Add.html'" />
+					<input type="button" value="+  添加考试" class="add_button" onclick="window.location = './Add.html'+document.location.search" />
 				</td>
 				<td>
 					<br />

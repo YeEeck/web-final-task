@@ -9,6 +9,11 @@ input:focus {
 	/* 去除input的聚焦效果 */
 }
 
+
+.logo_img {
+	vertical-align: middle;
+}
+
 .topmenu {
 	position: relative;
 	cursor: pointer;
@@ -53,6 +58,9 @@ input:focus {
 .Cap {
 	color: black;
 	text-decoration: none;
+
+	display: inline-block;
+	vertical-align: middle;
 }
 
 .Cap:hover {
@@ -63,6 +71,8 @@ input:focus {
 	text-align: right;
 	color: gray;
 	text-decoration: none;
+
+	margin-right: 10px;
 }
 
 .my_exam:hover {
@@ -108,14 +118,17 @@ input:focus {
 
 	display: block;
 	background-color: white;
+	transition: background-color 0.3s;
 
 	text-align: center;
 
 	border-radius: 5px;
+	
 }
 
 .usermenu_elem:hover {
-	background-color: lightgray;
+	background-color: rgb(237, 237, 237);
+	transition: background-color 0.3s;
 }
 
 #exit_button {}
@@ -180,12 +193,15 @@ input:focus {
 	vertical-align: top;
 
 	padding-top: 5px;
-	
+
 	border-radius: 1px;
+
+	transition: background-color 0.3s;
 }
 
 .menu_elem:hover {
-	background-color: rgb(240, 240, 240) !important;
+	background-color: rgb(237, 237, 237) !important;
+	transition: background-color 0.3s;
 }
 
 .menu_elem_text {}
