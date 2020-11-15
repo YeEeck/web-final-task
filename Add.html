@@ -5,6 +5,7 @@
 		<meta name="author" content="YeEeck" />
 		<meta name="generator" content="Hbuilder X" />
 		<link href="css/list.css" type="text/css" rel="stylesheet" />
+		<script src="js/list.js" type="text/javascript"></script>
 		<title>添加考试</title>
 		<style type="text/css">
 			#head_line2 {
@@ -38,15 +39,23 @@
 				<td align="right">
 					<a class="my_exam" href="./list.html">我的考试</a>
 				</td>
-				<td align="right" width="55px">
-					<a href="javascript:alert('个人信息尚未上线')">
-						<div class="userpicDiv">
-							<img src="img/person.png" class="img_user" />
+				<td align="right" width="140px" id="user_td">
+					<!-- <a href="javascript:alert('个人信息尚未上线')"> -->
+						<div class="usermenu" onmousemove="list_apper('son_list2')" onmouseleave="list_disapper('son_list2')">
+							<a id="username">123456</a>
+							<div class="userpicDiv">
+								<img src="img/person.png" class="img_user" />
+							</div>
+							<div class="topmenu2 usermenu2" id="son_list2">
+								<a class="usermenu_elem">个人中心</a>
+								<a class="usermenu_elem">私信</a>
+								<a class="usermenu_elem">设置</a>
+								<a href="index.html" id="exit_button" class="usermenu_elem">退出登录</a>
+								
+							</div>
 						</div>
-					</a>
-				</td>
-				<td width="55px">
-					<a href="index.html" id="exit_button">退出登录</a>
+						
+					<!-- </a> -->
 				</td>
 			</tr>
 			<tr>
