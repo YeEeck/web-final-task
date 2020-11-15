@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 body {
 	background-color: rgb(247, 247, 247);
 }
@@ -8,39 +9,39 @@ input:focus {
 	/* 去除input的聚焦效果 */
 }
 
-.topmenu{
+.topmenu {
 	position: relative;
 	cursor: pointer;
 	padding-left: 5px;
 }
 
-.menu_title:hover{
+.menu_title:hover {
 	/* color: rgb(0, 149, 255); */
 }
 
-.topmenu2{
+.topmenu2 {
 	background-color: white;
 	position: absolute;
 	display: none;
-	
-	
+
+
 	border-radius: 5px;
 }
 
-.toplist_elem:hover{
+.toplist_elem:hover {
 	/* color: rgb(0, 149, 255); */
 	background-color: lightgray;
 }
 
-.toplist_elem{
+.toplist_elem {
 	display: block;
-	
+
 	border-bottom-style: solid;
 	border-bottom-width: 1px;
 	border-bottom-color: whitesmoke;
-	
+
 	padding: 5px;
-	
+
 	border-radius: 5px;
 }
 
@@ -76,6 +77,55 @@ input:focus {
 	height: 40px;
 	overflow: hidden;
 
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.usermenu {
+	background-color: lightgray;
+	border-radius: 30px;
+
+	cursor: pointer;
+
+	z-index: 2;
+}
+
+.usermenu2 {
+	width: 140px;
+
+	z-index: 2;
+}
+
+.usermenu_elem {
+	color: gray;
+	font-size: small;
+	text-decoration: none;
+
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+	margin-top: 3px;
+
+	display: block;
+	background-color: white;
+
+	text-align: center;
+
+	border-radius: 5px;
+}
+
+.usermenu_elem:hover {
+	background-color: lightgray;
+}
+
+#exit_button {}
+
+
+
+#username {
+	position: relative;
+	top: 2px;
+	right: 10px;
 }
 
 .img_user {
@@ -121,25 +171,24 @@ input:focus {
 .menu_elem {
 	width: 230px;
 	height: 28px;
-	border-bottom-color: lightgray;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
+	text-align: center;
 
-	
 	cursor: pointer;
 
 	font-size: 16px;
 	display: inline-block;
 	vertical-align: top;
+
+	padding-top: 5px;
+	
+	border-radius: 1px;
 }
 
 .menu_elem:hover {
-	background-color: lightgray;
+	background-color: rgb(240, 240, 240) !important;
 }
 
-.menu_elem_text{
-	padding-left: 10px;
-}
+.menu_elem_text {}
 
 .input_div {
 	background-color: white;
@@ -250,20 +299,9 @@ input:focus {
 	color: rgb(0, 133, 255);
 }
 
-#exit_button {
-	color: gray;
-	font-size: small;
-	text-decoration: none;
-	position: relative;
-	top: 10px;
-	left: 5px;
-}
 
-#exit_button:hover {
-	color: rgb(0, 133, 255);
-}
 
-.listTable{
+.listTable {
 	width: 100%;
 	height: 100%;
 }

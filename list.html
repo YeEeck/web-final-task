@@ -35,15 +35,24 @@
 					<a class="my_exam" href="./list.html">我的考试</a>
 
 				</td>
-				<td align="right" width="55px">
-					<a href="javascript:alert('个人信息尚未上线')">
-						<div class="userpicDiv">
-							<img src="img/person.png" class="img_user" />
+				<td align="right" width="140px" id="user_td">
+					<!-- <a href="javascript:alert('个人信息尚未上线')"> -->
+						<div class="usermenu" onmousemove="list_apper('son_list2')" onmouseleave="list_disapper('son_list2')">
+							<a id="username">123456</a>
+							<div class="userpicDiv">
+								<img src="img/person.png" class="img_user" />
+							</div>
+							<div class="topmenu2 usermenu2" id="son_list2">
+								<a class="usermenu_elem">私信</a>
+								<a href="index.html" id="exit_button" class="usermenu_elem">退出登录</a>
+								
+							</div>
 						</div>
-					</a>
+						
+					<!-- </a> -->
 				</td>
 				<td>
-					<a href="index.html" id="exit_button">退出登录</a>
+					
 				</td>
 			</tr>
 			<tr>
@@ -65,10 +74,10 @@
 			<tr>
 				<!-- 添加考试下方的菜单栏 -->
 				<td height="100px">
-					<div class="menu_elem" onclick="change_display('all')"><a class="menu_elem_text">全部考试</a></div>
-					<div class="menu_elem" onclick="change_display('dt')"><a class="menu_elem_text">当堂测验</a></div>
-					<div class="menu_elem" onclick="change_display('kh')"><a class="menu_elem_text">课后测试</a></div>
-					<div class="menu_elem" onclick="change_display('qm')"><a class="menu_elem_text">期末考试</a></div>
+					<div class="menu_elem" onclick="change_display('all')" id="normal_choice"><a class="menu_elem_text">全部考试</a></div>
+					<div class="menu_elem" onclick="change_display('dt')" id="dt_choice"><a class="menu_elem_text">当堂测验</a></div>
+					<div class="menu_elem" onclick="change_display('kh')" id="kh_choice"><a class="menu_elem_text">课后测试</a></div>
+					<div class="menu_elem" onclick="change_display('qm')" id="qm_choice"><a class="menu_elem_text">期末考试</a></div>
 				</td>
 				<td colspan="3" rowspan="2">
 					<!-- 为了不影响上面的侧边菜单，用了表格嵌套 -->

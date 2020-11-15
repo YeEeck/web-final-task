@@ -21,16 +21,16 @@ function login() {
 			for (var i = 0; i < json.num; i++) {
 				if (json.account[i] == account) {
 					if (json.password[i] == password) {
-						window.location = "./list.html";
+						window.location = "./list.html?"+account;
 						return;
 					} else {
 						getelem("tip").innerText = "用户名或密码错误";
 					}
 				}
 			}
-			getelem("tip").innerText = "用户名不存在"
+			getelem("tip").innerText = "用户名不存在";
 		}
-	}
+	};
 }
 
 document.onkeydown = function(event) {
@@ -39,4 +39,4 @@ document.onkeydown = function(event) {
 		//绑定焦点，有可能不成功，需要多试试一些标签 
 		login();
 	}
-}
+};
